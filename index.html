@@ -50,29 +50,29 @@
           <ul>
             <li>
               <h3>Материалы</h3>
-                <span>На любой вкус</span>
+                <span><a href="#">На любой вкус</a></span>
                 <!--вставлю пока img-->
                   <img src="vedro" width="44" height="65">
                     <img="new-flag.png" width="60" height="59">
              </li>
             <li>
               <h3>Инструмент</h3>
-                <span>На все случаи</span>
+                <span><a href="#">На все случаи</a></span>
                   <img src="drel" width="75" height="61">
             </li>
             <li>
               <h3>Техника</h3>
-                <span>Для стройки</span>
+                <span><a href="#">Для стройки</a></span>
                   <img src="tractor" width="78" height="62">
             </li>
             <li>
               <h3>Скидки 50%</h3>
-                <span>На 350 товаров</span>
+                <span><a href="#">На 350 товаров</a></span>
                   <img src="cart" width="59" height="72">
             </li>
             <li>
               <h3>Доставка</h3>
-                <span>Бесплатно</span>
+                <span><a href="#">Бесплатно</a></span>
                   <img src="cart" width="78" height="63">
             </li>
           </ul>
@@ -87,7 +87,7 @@
                   <span>Настоящие мужские игрушки</span>
                     <img src="img/index/slide-image-puncher.jpg" width="620" height="266" alt="Перфораторы">
                 </div>
-                  <span>Открыть каталог</span>
+                  <span><a href="inner.html">Открыть каталог</a></span>
                     <button type="button" name="arrow-left"><img src="arrow-left" width="22" height="40"></button>
                     <button type="button" name="arrow-right"><img src="arrow=right" width="22" height="40"></button>
                   <!-- Добавить инпуты с переключением слайдера -->
@@ -283,8 +283,32 @@
                 Обратная связь:<br>
 mail@htmlacademy.ru</p>
                   <p>Разработано —<br>
-htmlacademy.ru</p>
+<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </section>
         </footer>
   </body>
 </html>
+
+<!-- модальные окна -->
+<div>
+  <img src="img\index\map-big.png" width="940" height="446" alt="Карта с нашим адресом">
+  <button type="button" name="map-close"></button>
+</div>
+
+<div>
+  <div><!-- Красная полоса над формой--></div>
+  <button type="button" name="close-form"> </button>
+  <form method="post" action="#">
+    <fieldset>
+      <p><label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" placeholder="Имя Фамилия"></p>
+          <p><label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com"></p>
+              <p><label for="text">Текст письма:</label>
+                <textarea placeholder="В свободной форме"></textarea></p>
+    </fieldset>
+    <fieldset>
+     <button type="submit" name="submit">Отправить</button>
+   </fieldset>
+  </form>
+</div>

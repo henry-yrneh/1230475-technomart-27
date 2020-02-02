@@ -61,7 +61,26 @@
             <section>
               <div>
                 <span>Фильтр:</span>
-                <!-- доверстать фильтры -->
+                <form method="#" action="#">
+              <!-- Пока не верстаем цену
+                  <fieldset>
+                    <legend>Цена</legend>
+                  </fieldset> -->
+                    <fieldset>
+                      <legend>Производители:</legend>
+                      <label><input type="checkbox" name="manufacturer" checked>Bosch</label>
+                      <label><input type="checkbox" name="manufacturer">Интерскол</label>
+                      <label><input type="checkbox" name="manufacturer" checked>Makita</label>
+                      <label><input type="checkbox" name="manufacturer">Dewalt</label>
+                      <label><input type="checkbox" name="manufacturer">Hitachi</label>
+                    </fieldset>
+                      <fieldset>
+                        <legend>Питание:</legend>
+                          <label><input type="radio" name="supply" checked>Аккумуляторные</label>
+                          <label><input type="radio" name="supply">Сетевые</label>
+                      </fieldset>
+                        <button type="submit" name="show-results">Показать</button>
+                </form>
               </div>
                 <div>
                   <span>Сортировка:</span>
@@ -248,7 +267,20 @@
                 Обратная связь:<br>
 mail@htmlacademy.ru</p>
                   <p>Разработано —<br>
-htmlacademy.ru</p>
+<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </section>
         </footer>
     </body>
+
+    <!-- модальные окна -->
+    <section>
+      <div><!-- Красная полоса над формой--></div>
+        <div>
+          <h3>Товар добавлен в корзину</h3>
+        </div>
+          <div>
+            <a href="#">Оформить заказ</a>
+            <button type="button" name="back-to-shopping">Продолжить покупки</button>
+          </div>
+            <button type="button" name="close-form-add-to-cart"></button>
+    </section>
