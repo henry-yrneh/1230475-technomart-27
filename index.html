@@ -12,7 +12,12 @@
       <h1> Магазин строительных материалов</h1>
       <p><img src="logo-header.png" width="220" height="47" alt="логотип"></p>
       <section>
-          <p><a href="#">Поиск</a></p> <!-- читал ещё про <input type может его лучше? -->
+         <div>
+            <form method="get" action="https://echo.htmlacademy.ru" >
+              <label for="search">Поиск:</label>
+              <input type="search" name="search" id="search">
+           </form>
+         </div>
           <p><a href="#">Закладки:</a></p>
           <p><a href="#">Корзина:</a></p>
           <p><a href="#">Оформить заказ</a></p>
@@ -23,10 +28,10 @@
 строительных материалов<br>
 и инструментов для ремонта
        </p>
-         <div>
-           <p>+7 (812) 555-05-55</p>
+         <address>
+           <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-         </div>
+         </address>
            <ul>
             <li><a href="#">Войти</a></li>
             <li><a href="#">Регистрация</a></li>
@@ -78,20 +83,20 @@
           </ul>
           <div> <!-- слайды-->
             <div>
-           <h3>Дрели</h3>
-             <span>Соседям на радость!</span>
-               <img src="img/index/slider-image-drill.jpg" width="620" height="266" alt="Дрели">
-            </div>
-              <div>
-                <h3>Перфораторы</h3>
-                  <span>Настоящие мужские игрушки</span>
-                    <img src="img/index/slide-image-puncher.jpg" width="620" height="266" alt="Перфораторы">
+              <h3>Дрели</h3>
+                <span>Соседям на радость!</span>
+                  <img src="img/index/slider-image-drill.jpg" width="620" height="266" alt="Дрели">
+             </div>
+               <div>
+                 <h3>Перфораторы</h3>
+                   <span>Настоящие мужские игрушки</span>
+                     <img src="img/index/slide-image-puncher.jpg" width="620" height="266" alt="Перфораторы">
                 </div>
                   <span><a href="inner.html">Открыть каталог</a></span>
                     <button type="button" name="arrow-left"><img src="arrow-left" width="22" height="40"></button>
                     <button type="button" name="arrow-right"><img src="arrow=right" width="22" height="40"></button>
                   <!-- Добавить инпуты с переключением слайдера -->
-           </div>
+            </div>
         </section>
 
         <section>
@@ -249,7 +254,7 @@
         <footer>
           <section>
             <a href="index.html"><img src="logo-footer.png" width="220" height="68" alt="логотип"></a>
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+              <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</address>
               <!-- Нужны ли ниже div для ul или можно без них задать все отступы и стили для ссылок?-->
                 <div>
                   <ul>
@@ -271,7 +276,7 @@
           </section>
 
           <section>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
               <div>
                 <ul>
                   <li><a href="#">VK</a></li>
@@ -298,14 +303,14 @@ mail@htmlacademy.ru</p>
 <div>
   <div><!-- Красная полоса над формой--></div>
   <button type="button" name="close-form"> </button>
-  <form method="post" action="#">
+  <form method="post" action="https://echo.htmlacademy.ru">
     <fieldset>
       <p><label for="name">Ваше имя:</label>
         <input type="text" name="name" id="name" placeholder="Имя Фамилия"></p>
           <p><label for="email">Ваш e-mail:</label>
             <input type="email" name="email" id="email" placeholder="email@example.com"></p>
               <p><label for="text">Текст письма:</label>
-                <textarea placeholder="В свободной форме"></textarea></p>
+                <textarea placeholder="В свободной форме"  name="text" id="text"></textarea></p>
     </fieldset>
     <fieldset>
      <button type="submit" name="submit">Отправить</button>
