@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>"Купить Перфоратор в Москве недорого"</title>
      <meta name="description" content="Перфораторы с доставкой в магазине Техномарт. Большой выбор, низкие цены. Звоните +7 (812) 555-05-55">
+     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
   </head>
 
     <body>
@@ -11,14 +14,21 @@
       <header>
         <h1> Магазин строительных материалов</h1>
         <a href="index.html"><img src="logo-header.png" width="220" height="47" alt="логотип"></a>
-         <section>
-           <p><a href="#">Поиск</a></p> <!-- читал ещё про <input type может его лучше? -->
-           <p><a href="#">Закладки:</a></p>
-           <p><a href="#">Корзина:</a></p>
-           <p><a href="#">Оформить заказ</a></p>
+        <section class="first-header-block">
+           <div class="search">
+              <form method="get" action="https://echo.htmlacademy.ru" >
+                <label for="search">Поиск:</label>
+                <input type="search" name="search" id="search">
+             </form>
+           </div>
+           <div class="user-navigation">
+            <p><a href="#">Закладки:</a></p>
+            <p =class="cart-full"><a href="#">Корзина:</a></p>
+            <p><a href="checkout-active">Оформить заказ</a></p>
+           </div>
         </section>
 
-        <section>
+        <section class="last-header-block">
           <p>Интернет-магазин<br>
   строительных материалов<br>
   и инструментов для ремонта
@@ -28,8 +38,8 @@
                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
            </address>
              <div>
-               <a href=#>Равшан Джамшутович</a>
-               <ul>
+               <p class="logged"><a href=#>Равшан Джамшутович</a><p>
+               <ul class="personal-data">
                 <li><a href="#">Мои заказы</a></li>
                 <li><a href="#">Личный кабинет</a></li>
                </ul>
@@ -48,7 +58,7 @@
         </section>
       </header>
         <main>
-           <section>
+           <section class="breadcrumps"> <!-- breadcrumps-->
              <ol>
                <li><a href="index.html"></a></li>
                  <li><a href="catalog.html">Каталог</a></li>
@@ -58,9 +68,9 @@
                 <h1>Перфораторы</h1>
             </section>
 
-            <section>
+            <aside class="filter">
               <div>
-                <span>Фильтр:</span>
+                <span class="filter-header">Фильтр:</span>
                 <form method="get" action="https://echo.htmlacademy.ru">
               <!-- Пока не верстаем цену
                   <fieldset>
@@ -82,9 +92,10 @@
                         <button type="submit" name="show-results">Показать</button>
                 </form>
               </div>
-                <div>
+            </aside>
+                <div class="sorting">
                   <span>Сортировка:</span>
-                  <ul>
+                  <ul class="sorting-date">
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По функционалу</a></li>
@@ -92,6 +103,7 @@
                     <li><a href="#"><!-- иконка убывание --></a></li>
                   </ul>
                 </div>
+                <section class="catalog">
                 <ul>
                   <li>
                     <a href="#">
@@ -99,12 +111,12 @@
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 3000</span>
                     </h3>
+                    <p><del>22500 Р.</del></p>
+                    <p class="price">15500 Р.</p>
+                  </a>
                      <p>
                       <img src="img/items/item-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                     </p>
-                      <p><del>22500 Р.</del></p>
-                      <p>15500 Р.</p>
-                    </a>
                   </li>
                   <li>
                     <a href="#">
@@ -112,12 +124,12 @@
                         <span>Перфоратор BOSCH</span>
                         <span>BFG 6000</span>
                     </h3>
+                      <p><del>30500 Р.</del></p>
+                        <p class="price">25500 Р.</p>
+                   </a>
                       <p>
                         <img src="img/items/item-bosch-6000-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                       </p>
-                        <p><del>30500 Р.</del></p>
-                          <p>25500 Р.</p>
-                     </a>
                   </li>
                   <li> <!-- подумать, как тут быть с сылками на карту товара, т.к. есть кнопки -->
                     <h3>
@@ -127,10 +139,10 @@
                       </a>
                     </h3>
                       <p>
-                        <button type="button" name="add-to-cart">КУПИТЬ</button>
-                        <button type="button" name="add-to-favourite">В ЗАКЛАДКИ</button>
+                        <button class="add-to-cart" type="button" name="add-to-cart">КУПИТЬ</button>
+                        <button class="add-to-favourite" type="button" name="add-to-favourite">В ЗАКЛАДКИ</button>
                       </p>
-                        <p>12500 Р.</p>
+                        <p class="price">12500 Р.</p>
                           <div>
                           <!-- Здесь будет ссылочка на иконку "новинки"-->
                          </div>
@@ -141,12 +153,12 @@
                        <span>Перфоратор BOSCH</span>
                        <span>BFG 3000</span>
                    </h3>
+                   <p><del>22500 Р.</del></p>
+                     <p class="price">15500 Р.</p>
+                   </a>
                      <p>
                        <img src="img/items/item-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                      </p>
-                       <p><del>22500 Р.</del></p>
-                         <p>15500 Р.</p>
-                    </a>
                  </li>
                  <li>
                    <a href="#">
@@ -154,15 +166,15 @@
                        <span>Перфоратор BOSCH</span>
                        <span>BFG 6000</span>
                    </h3>
+                     <p><del>30500 Р.</del></p>
+                       <p class="price">25500 Р.</p>
+                         <div>
+                       <!-- Здесь будет ссылочка на иконку "новинки"-->
+                        </div>
+                 </a>
                      <p>
                        <img src="img/items/item-bosch-6000-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                      </p>
-                       <p><del>30500 Р.</del></p>
-                         <p>25500 Р.</p>
-                           <div>
-                         <!-- Здесь будет ссылочка на иконку "новинки"-->
-                          </div>
-                   </a>
                  </li>
                  <li>
                    <a href="#">
@@ -170,11 +182,11 @@
                        <span>Перфоратор BOSCH</span>
                        <span>BFG 2000</span>
                    </h3>
+                       <p class="price">12500 Р.</p>
+                  </a>
                      <p>
                        <img src="img/items/item-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                      </p>
-                         <p>12500 Р.</p>
-                    </a>
                  </li>
                  <li>
                    <a href="#">
@@ -182,15 +194,15 @@
                        <span>Перфоратор BOSCH</span>
                        <span>BFG 3000</span>
                    </h3>
+                     <p><del>22500 Р.</del></p>
+                       <p class="price">15500 Р.</p>
+                         <div>
+                     <!-- Здесь будет ссылочка на иконку "новинки"-->
+                        </div>
+                  </a>
                      <p>
                        <img src="img/items/item-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                      </p>
-                       <p><del>22500 Р.</del></p>
-                         <p>15500 Р.</p>
-                           <div>
-                       <!-- Здесь будет ссылочка на иконку "новинки"-->
-                          </div>
-                    </a>
                  </li>
                  <li>
                    <a href="#">
@@ -198,12 +210,12 @@
                        <span>Перфоратор BOSCH</span>
                        <span>BFG 6000</span>
                    </h3>
+                     <p><del>30500 Р.</del></p>
+                       <p class="price">25500 Р.</p>
+                   </a>
                      <p>
                        <img src="img/items/item-bosch-6000-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                      </p>
-                       <p><del>30500 Р.</del></p>
-                         <p>25500 Р.</p>
-                     </a>
                  </li>
                  <li>
                    <a href="#">
@@ -211,17 +223,17 @@
                        <span>Перфоратор BOSCH</span>
                        <span>BFG 2000</span>
                    </h3>
+                       <p class="price">12500 Р.</p>
+                 </a>
                      <p>
                        <img src="img/items/item-bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                      </p>
-                         <p>12500 Р.</p>
-                   </a>
                  </li>
                 </ul>
                 <!-- add pagination here  -->
               </section>
 
-              <section>
+              <section class="description-inner">
                 <h2>Пара слов о перфоратарах</h2>
                   <p> Перфоратор — универсальный строительный инструмент.
                     Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
@@ -231,11 +243,9 @@
               </section>
         </main>
         <footer>
-          <section>
+          <section class="first-footer-block">
             <a href="index.html"><img src="logo-footer.png" width="220" height="68" alt="логотип"></a>
               <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
-              <!-- Нужны ли ниже div для ul или можно без них задать все отступы и стили для ссылок?-->
-                <div>
                   <ul>
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
@@ -243,20 +253,16 @@
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                   </ul>
-                </div>
-                  <div>
                     <ul>
                       <li><a href="#">Материалы</a></li>
                       <li><a href="#">Техника</a></li>
                       <li><a href="#">Инсрумент</a></li>
                       <li><a href="#">Спецпредложения</a></li>
                     </ul>
-                  </div>
           </section>
 
-          <section>
-            <p>© 2010–2019 Компания «Техномарт»
-             Все права защищены</p>
+          <section class="last-footer-block">
+            <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
               <div>
                 <ul>
                   <li><a href="#">VK</a></li>
@@ -266,9 +272,9 @@
               </div>
                 <p>
                 Обратная связь:<br>
-mail@htmlacademy.ru</p>
+<span>mail@htmlacademy.ru</span></p>
                   <p>Разработано —<br>
-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+<span><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span></p>
           </section>
         </footer>
     </body>

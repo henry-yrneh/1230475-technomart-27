@@ -1,0 +1,333 @@
+body {
+  margin: O;
+  padding: O;
+
+  font-family: "PTSans", "Arial", sans-serif;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+}
+
+address, address a {
+  font-style: normal;
+}
+
+
+/* HEADER */
+
+.main-header {
+  font-family: "Cuprum", sans-serif;
+}
+
+.h1-index {
+  display: none;
+}
+
+.first-header-block {
+  color: #ffffff;
+  font-size: 17px;
+
+  background-color: #293449;
+  }
+
+.user-navigation {
+  color: white;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.search:hover,
+.marker:hover,
+.cart:hover {
+  background-color: #212a3a;
+}
+
+.search:focus{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.marker:active,
+.cart:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.checkout {
+  background-color: #63a63e;
+}
+
+.checkout:hover
+.checkout:focus {
+  background-color: #5fbb2d;
+}
+
+.checkout:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login {
+  list-style: none;
+}
+
+
+.last-header-block {
+  background-color: #f4f7f9;
+}
+
+.last-header-block > p {
+  color: #ee3643;
+  font-style: italic;
+}
+
+header address a {
+  color: #ee3643;
+  font-size: 21px;
+}
+
+address p:last-child {
+  color: #32425c;
+  font-size: 14px;
+}
+
+.login li{
+  font-size: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation {
+  color: #ffffff;
+  font-size: 17px;
+
+  background-color: #32425c;
+}
+
+.main-navigation ul {
+    list-style: none;
+}
+
+/* Banners on index.html */
+
+.banners-list ul {
+   list-style: none;
+}
+
+
+/* About company block */
+
+.about-company, .contacts h2 {
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.about-company p {
+  font-family: "PTSans" "Arial", sans-serif;
+  font-size: 13px;
+
+
+}
+
+.about-company ul {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.about-company, .contacts a {
+  color: #ffffff;
+  background-color: #ee3643;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.first-footer-block {
+  background-color: #32425c;
+  font-size: 18px;
+
+}
+
+.first-footer-block address {
+  color: #f3f7f9;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.first-footer-block ul:first-of-type {
+  color: #f1f5f7;
+}
+
+.first-footer-block ul:last-of-type {
+  color: #ffd180;
+}
+
+.last-footer-block {
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.last-footer-block li {
+  background-color: #212a3a;
+}
+
+.last-footer-block span {
+  color: #ffd180;
+}
+
+/* INNER PAGE */
+
+/* HEADER */
+
+.cart-full {
+  background-color: #ee3643;
+}
+
+.checkout-active {
+background-color: #63a63e;
+}
+
+.logged {
+background-color: #ffffff;
+color: #000000;
+font-size: 21px;
+}
+
+.personal-data {
+  color: #32425c;
+  font-size: 16px;
+  text-decoration: underline;
+
+}
+
+
+
+/* MAIN*/
+
+.breadcrumps ol {
+font-size: 13px;
+text-transform: uppercase;
+}
+
+.breadcrumps h1 {
+  background-color: #f2f6f8;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+/*FILTER*/
+
+.filter-header {
+background-color: #f7f3ec;
+font-size: 13px;
+}
+
+fieldset {
+  border: 0 none;
+}
+
+.filter legend {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+fieldset input {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter button {
+  text-transform: uppercase;
+  font-size: 13px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+/* SORTING*/
+
+.sorting {
+  border-color: #f7f3ec;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.sorting span {
+  font-weight: bold;
+}
+
+.sorting-date li:first-child {
+  color: #ee3643;
+}
+
+.sorting-date li:nth-child(2) {
+  border-bottom: 1px dashed #ee3643
+}
+
+.sorting-date li:nth-child(3) {
+  border-bottom: 1px dashed #ee3643
+}
+
+.catalog h3 {
+  font-size: 18px;
+}
+
+.catalog del {
+  color: #999999;
+  font-weight: bold;
+}
+
+.price {
+  color: #ffffff;
+  font-size: 17px;
+  background-color: red;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #63a63e;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.add-to-favourite{
+  border: 3px solid #63a63e;
+  color: #32425c;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.description-inner {
+  background-color: #f4f7f9;
+}
+
+.description-inner h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Cuprum";
+}
+
+.description-inner p {
+  font-size: 13px;
+  line-height: 24px;
+}
