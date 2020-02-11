@@ -13,7 +13,7 @@
 
     <header class="main-header">
       <h1 class="h1-index"> Магазин строительных материалов</h1>
-      <p class="logo"><img src="logo-header.png" width="220" height="47" alt="логотип"></p>
+      <p class="logo"><img src="img\svg\logo-technomart.svg" width="109" height="19" alt="логотип"></p>
       <section class="first-header-block">
          <div class="search">
             <form method="get" action="https://echo.htmlacademy.ru" >
@@ -258,7 +258,7 @@
 
         <footer>
           <section class="first-footer-block">
-            <a href="index.html"><img src="logo-footer.png" width="220" height="68" alt="логотип"></a>
+            <p class="logo-footer"<a href="index.html"><img src="img\svg\logo-technomart.svg" width="138" height="23" alt="логотип"></a> </p>
               <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
                   <ul>
                     <li><a href="#">Компания</a></li>
@@ -270,7 +270,7 @@
                     <ul>
                       <li><a href="#">Материалы</a></li>
                       <li><a href="#">Техника</a></li>
-                      <li><a href="#">Инсрумент</a></li>
+                      <li><a href="#">Инструмент</a></li>
                       <li><a href="#">Спецпредложения</a></li>
                     </ul>
           </section>
@@ -292,16 +292,16 @@
           </section>
         </footer>
         <!-- модальные окна -->
-        <div>
+        <div class="map-modal">
           <img src="img\index\map-big.png" width="940" height="446" alt="Карта с нашим адресом">
           <button type="button" name="map-close"></button>
         </div>
 
-        <div>
+        <div class="index-modal-form">
           <div><!-- Красная полоса над формой--></div>
           <button type="button" name="close-form"> </button>
           <form method="post" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="main-part-modal">
               <p><label for="name">Ваше имя:</label>
                 <input type="text" name="name" id="name" placeholder="Имя Фамилия"></p>
                   <p><label for="email">Ваш e-mail:</label>
@@ -309,7 +309,7 @@
                       <p><label for="text">Текст письма:</label>
                         <textarea placeholder="В свободной форме"  name="text" id="text"></textarea></p>
             </fieldset>
-            <fieldset>
+            <fieldset class="submit-modal">
              <button type="submit" name="submit">Отправить</button>
            </fieldset>
           </form>

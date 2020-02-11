@@ -15,6 +15,13 @@ address, address a {
   font-style: normal;
 }
 
+ul {
+    list-style: none;
+}
+
+.button {
+  text-transform: uppercase;
+}
 
 /* HEADER */
 
@@ -35,6 +42,11 @@ address, address a {
 
 .user-navigation {
   color: white;
+}
+
+.logo {
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .logo:hover {
@@ -76,11 +88,6 @@ address, address a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.login {
-  list-style: none;
-}
-
-
 .last-header-block {
   background-color: #f4f7f9;
 }
@@ -100,16 +107,27 @@ address p:last-child {
   font-size: 14px;
 }
 
+.login {
+  list-style: none;
+}
+
 .login li{
   font-size: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
+.login li:hover {
+  color: #ee3643;
+}
+
+.login li:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-navigation {
   color: #ffffff;
   font-size: 17px;
-
   background-color: #32425c;
 }
 
@@ -117,11 +135,23 @@ address p:last-child {
     list-style: none;
 }
 
+.main-navigation li:hover {
+  background-color: #1d2739;
+}
+
+.main-navigation li:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 /* Banners on index.html */
 
 .banners-list ul {
    list-style: none;
 }
+
 
 
 /* About company block */
@@ -135,7 +165,6 @@ address p:last-child {
   font-family: "PTSans" "Arial", sans-serif;
   font-size: 13px;
 
-
 }
 
 .about-company ul {
@@ -145,12 +174,21 @@ address p:last-child {
   list-style: none;
 }
 
-.about-company, .contacts a {
+.about-company a {
   color: #ffffff;
   background-color: #ee3643;
   font-size: 14px;
   text-align: center;
 }
+
+.contacts a {
+  color: #ffffff;
+  background-color: #ee3643;
+  font-size: 14px;
+  text-align: center;
+}
+
+
 
 /* FOOTER */
 
@@ -161,7 +199,6 @@ footer {
 .first-footer-block {
   background-color: #32425c;
   font-size: 18px;
-
 }
 
 .first-footer-block address {
@@ -178,6 +215,14 @@ footer {
   color: #ffd180;
 }
 
+.first-footer-block ul li:hover {
+  text-decoration: underline;
+}
+
+.first-footer-block ul li:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
 .last-footer-block {
   background-color: #293449;
   font-size: 16px;
@@ -185,15 +230,78 @@ footer {
   color: #ffffff;
 }
 
+.logo-footer {
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
 .last-footer-block li {
   background-color: #212a3a;
+}
+
+.last-footer-block li:hover {
+  background-color: #ee3643;
+}
+
+.last-footer-block li:active {
+  background-color: #ee3643;
 }
 
 .last-footer-block span {
   color: #ffd180;
 }
 
+.last-footer-block span:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.last-footer-block span:active {
+  color: #ee3643;
+}
+
+/* MODAL FORMS */
+
+.map-modal {
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+}
+
+.index-modal-form {
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.main-part-modal {
+  border-top: 7px solid #ff5357;
+}
+
+.index-modal-form label {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.index-modal-form input {
+  color: #a9a9a9;
+  font-size: 13px;
+  text-transform: none;
+}
+
+.submit-modal {
+  background-color: #f4f4f4;
+}
+
+.submit-modal button {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  border: none;
+}
+
+
+
 /* INNER PAGE */
+
 
 /* HEADER */
 
@@ -211,13 +319,31 @@ color: #000000;
 font-size: 21px;
 }
 
+.logged:hover {
+
+}
+
+.logged:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .personal-data {
   color: #32425c;
   font-size: 16px;
   text-decoration: underline;
-
 }
 
+.personal-data li:hover {
+  color: #ee3643;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.personal-data li:active {
+  color: rgba(50, 66, 92, 0.3);
+  font-size: 16px;
+  text-decoration: underline;
+}
 
 
 /* MAIN*/
@@ -324,10 +450,40 @@ fieldset input {
 .description-inner h2 {
   text-transform: uppercase;
   font-size: 30px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .description-inner p {
   font-size: 13px;
   line-height: 24px;
+}
+
+/* MODAL FORMS INNER */
+
+.add-to-cart-message {
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  font-family: "Cuprum", "Arial", sans-serif;
+  border-top: 7px solid #ff5357;
+}
+
+.add-to-cart-message h3 {
+  font-size: 30px;
+}
+
+.add-to-cart-message div::before {
+  background-image: url("img\svg\modal-check.svg");
+}
+
+.button-side {
+  background-color: #f1f1f1;
+}
+
+.button-side a {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.button-side button:first-of-type {
+  background-color: #ffffff;
+  border: none;
 }
