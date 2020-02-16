@@ -1,14 +1,15 @@
 body {
-  margin: O;
-  padding: O;
+  margin: 0;
+  padding: 0;
 
   font-family: "PTSans", "Arial", sans-serif;
   line-height: 24px;
+  width: 1200px;
 }
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 address, address a {
@@ -17,7 +18,9 @@ address, address a {
 
 ul {
     list-style: none;
+    padding-inline-start: 0;
 }
+
 
 .button {
   text-transform: uppercase;
@@ -27,26 +30,57 @@ ul {
 
 .main-header {
   font-family: "Cuprum", sans-serif;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .h1-index {
   display: none;
 }
 
 .first-header-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: #ffffff;
   font-size: 17px;
-
   background-color: #293449;
+  height: 42px;
+  min-width: 1200px;
+  }
+
+  .first-header-block p a {
+    text-align: center;
+    vertical-align: middle;
   }
 
 .user-navigation {
+  display: flex;
+  justify-content: space-between;
+
   color: white;
 }
+
+.user-navigation p {
+  margin-left: 15px;
+}
+
 
 .logo {
   background-color: #ee3643;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  width: 220px;
+  height: 47px;
+  text-align: center;
+  margin-right: 17px;
+}
+
+.logo img {
+  margin-top: 13px;
+  margin-bottom: 15px;
 }
 
 .logo:hover {
@@ -55,6 +89,18 @@ ul {
 
 .logo:active {
   background-color: #ba2732;
+}
+
+.search {
+  margin-right: 17px;
+}
+
+.marker{
+  margin-right: 46px;
+}
+
+.cart {
+  margin-right: 31px;
 }
 
 .search:hover,
@@ -76,6 +122,11 @@ ul {
 
 .checkout {
   background-color: #63a63e;
+  height: 42px;
+}
+
+.checkout a {
+  padding: 14px 22px 13px 20px;
 }
 
 .checkout:hover
@@ -90,31 +141,59 @@ ul {
 
 .last-header-block {
   background-color: #f4f7f9;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 278px;
 }
 
-.last-header-block > p {
+.middle-header-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.middle-header-wrap > p {
   color: #ee3643;
   font-style: italic;
 }
 
-header address a {
+.address p:first-child {
   color: #ee3643;
   font-size: 21px;
+  border: 3px solid #ffffff;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  text-align: center;
 }
 
-address p:last-child {
+.address p:first-child::before{
+  content: "";
+  background-image: url("../img/svg/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+}
+
+.address p:last-child {
   color: #32425c;
   font-size: 14px;
 }
 
 .login {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login li{
   font-size: 21px;
   color: #000000;
   background-color: #ffffff;
+  margin-left: 10px;
 }
 
 .login li:hover {
@@ -125,14 +204,26 @@ address p:last-child {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.login li a {
+  display: block;
+  padding: 14px 25px 11px 25px;
+}
+
 .main-navigation {
   color: #ffffff;
   font-size: 17px;
   background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  margin-bottom: 60px;
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .main-navigation ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .main-navigation li:hover {
