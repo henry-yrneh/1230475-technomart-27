@@ -18,8 +18,8 @@
         <p class="logo"><img src="img\svg\logo-technomart.svg" width="109" height="19" alt="логотип"></p>
          <div class="search">
             <form method="get" action="https://echo.htmlacademy.ru" >
-              <label for="search"><img src="img\svg\icon-search.svg" width="17" height="17"></label>
               <input type="search" name="search" id="search" placeholder="Поиск">
+                <label for="search"></label>
            </form>
          </div>
          <div class="user-navigation">
@@ -235,12 +235,13 @@
               </div>
         </section>
 
+        <div class="company-contacts-wrapper">
           <section class="about-company">
             <h2>Компания "Техномарт"</h2>
               <p>Настоящий мужской шоппинг начинается здесь!
 Огромный выбор товаров для ремонта и строительства не оставит
 равнодушными любителей сэкономить на гастарбайтерах.</p>
-                <p> Мы можем доставить ваш товар в самые отдаленные точки России!
+                <p> Мы можем доставить ваш товар в самые отдаленные точки России! <br>
 Техномарт работает со многими транспортными компаниями:</p>
                   <ul>
                     <li>Деловые линии</li>
@@ -257,12 +258,16 @@
                 <img src="img/index/map.png" width="300" height="158" alt="Карта">
                 <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
+      </div>
       </main>
 
         <footer>
           <section class="first-footer-block">
-            <p class="logo-footer"<a href="index.html"><img src="img\svg\logo-technomart.svg" width="138" height="23" alt="логотип"></a> </p>
-              <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
+            <div class="footer-logo-address-wrap">
+            <p class="logo-footer"><a href="index.html"><img src="img\svg\logo-technomart.svg" width="138" height="23" alt="логотип"></a> </p>
+              <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> <a href="tel:+78125550555">+7 (812) 555-05-55</a></address>
+            </div>
+                <div class="footer-nav">
                   <ul>
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
@@ -276,15 +281,16 @@
                       <li><a href="#">Инструмент</a></li>
                       <li><a href="#">Спецпредложения</a></li>
                     </ul>
+                  </div>
           </section>
 
           <section class="last-footer-block">
-            <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
+            <p>© 2010–2019 Компания «Техномарт» <br> Все права защищены</p>
               <div>
-                <ul>
-                  <li><a href="#">VK</a></li>
-                  <li><a href="#">FB</a></li>
-                  <li><a href="#">INST</a></li>
+                <ul class="social-buttons">
+                  <li class="vk"><a href="#"></a></li>
+                  <li class="fb"><a href="#"></a></li>
+                  <li class="inst"><a href="#"></a></li>
                 </ul>
               </div>
                 <p>
